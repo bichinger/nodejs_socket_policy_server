@@ -9,7 +9,13 @@
   "homepage": "https://github.com/Bichinger/nodejs_socket_policy_server",
   "bugs": "https://github.com/Bichinger/nodejs_socket_policy_server/issues",
   "license": "Unlicense",
+
   "preferGlobal": true,
+  "user": "root",
+  
+  "dependencies": {
+    "start-stop-daemon": ">=0.1.0"
+  },
 
   "config": {
     "host": null,
@@ -19,6 +25,7 @@
   },
 
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js start",
+    "stop": "node server.js stop"
   }
 }
