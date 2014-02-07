@@ -1,7 +1,7 @@
 var net = require('net');
 var fs = require('fs');
 var path = require('path');
-	var config = require('./config');
+var config = require('./config');
 
 var policy = fs.readFileSync(path.join(__dirname, 'socket_policy.xml'));
 
