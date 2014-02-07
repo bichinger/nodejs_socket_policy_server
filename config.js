@@ -17,4 +17,7 @@ config.timeout = process.env.npm_package_config_timeout;
 // set to true only for debugging purposes!
 config.log_request_data = process.env.npm_package_config_log_request_data;
 
+// Path to the logfile
+config.logfile = process.env.npm_package_config_logfile;
+
 module.exports = config;

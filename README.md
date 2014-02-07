@@ -13,3 +13,11 @@ sudo npm config --global set socket-policy-server:timeout 5000
 
 sudo npm config --global set socket-policy-server:log_request_data true
 
+sudo npm config --global set socket-policy-server:log_request_data /var/log/socket-policy-server.log
+
+
+sudo npm -g start socket-policy-server
+sudo npm -g stop socket-policy-server
+sudo npm -g restart socket-policy-server
+
+sudo npm -g run-script socket-policy-server status

@@ -1,16 +1,11 @@
+var net = require('net');
+var fs = require('fs');
+var path = require('path');
+var config = require('./config');
 var startStopDaemon = require('start-stop-daemon');
-startStopDaemon({max: 1}, function() {
-  var net = require('net');
-  var fs = require('fs');
-  var path = require('path');
-  var config = require('./config');
 
-  log("config.host: " + config.host);
-  log("config.port: " + config.port);
-  log("config.timeout: " + config.timeout);
-  log("config.log_request_data: " + config.log_request_data);
-  log("process.getuid(): " + process.getuid());
-
+startStopDaemon({outFile: config.logfile, errFile: config.logfile}, function() {
+  
   var policy = fs.readFileSync(path.join(__dirname, 'socket_policy.xml'));
 
   var command = '<policy-file-request/>';
@@ -44,6 +39,7 @@ startStopDaemon({max: 1}, function() {
           } else {
               socket.end();
               message += 'BAD';
+              throw new Error('BAAAAAD');
           }
           socket.destroy();
           logForConnection(socket, message);

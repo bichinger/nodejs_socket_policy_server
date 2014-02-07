@@ -21,11 +21,14 @@
     "host": null,
     "port": 843,
     "timeout": 5000,
-    "log_request_data": true
+    "log_request_data": true,
+    "logfile": "/var/log/socket-policy-server.log"
   },
 
   "scripts": {
     "start": "node server.js start",
-    "stop": "node server.js stop"
+    "stop": "node server.js stop",
+    "restart": "node server.js restart",
+    "status": "node server.js status"
   }
 }
