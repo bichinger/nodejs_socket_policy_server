@@ -1,7 +1,7 @@
 nodejs_socket_policy_server
 ===========================
 
-Socket Policy server for node.js
+Unity3D &amp; Flash Socket Policy server for node.js
 
 
 sudo npm config --global set socket-policy-server:host 127.0.0.1
