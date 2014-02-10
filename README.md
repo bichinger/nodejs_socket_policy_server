@@ -5,6 +5,8 @@ Unity3D &amp; Flash Socket Policy server for node.js
 
 sudo npm -g install .
 
+sudo npm -g uninstall .
+
 sudo npm config --global set socket-policy-server:host 127.0.0.1
 
 sudo npm config --global set socket-policy-server:port 843

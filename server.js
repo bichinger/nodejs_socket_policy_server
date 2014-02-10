@@ -64,8 +64,9 @@ startStopDaemon({outFile: config.logfile, errFile: config.logfile}, function() {
       log("socket policy server closing after handling " + connectionCount + " connections");
   });
 
+  log('socket policy server binding to port ' + config.port + ' on ' + (config.host || 'all IPs') + "...");
   server.listen(config.port, config.host, function () {
-    log('socket policy server bound to port ' + config.port + ' on ' + (config.host || 'all IPs'));
+    log("successfully bound!");
   });
 
   function logForConnection(socket, message) {
