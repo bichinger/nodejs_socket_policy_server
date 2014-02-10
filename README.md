@@ -3,7 +3,6 @@ nodejs_socket_policy_server
 
 Socket Policy server for node.js
 
-logs to stdout
 
 sudo npm config --global set socket-policy-server:host 127.0.0.1
 
@@ -21,3 +20,4 @@ sudo npm -g stop socket-policy-server
 sudo npm -g restart socket-policy-server
 
 sudo npm -g run-script socket-policy-server status
+sudo npm -g run-script socket-policy-server restart
