@@ -1,14 +1,14 @@
 {
   "name": "socket-policy-server",
-  "description": "Socket Policy server for node.js",
+  "description": "Unity3D/Flash Socket Policy server",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bichinger/nodejs_socket_policy_server.git"
+    "url": "git@github.com:Bichinger/nodejs_socket_policy_server.git"
   },
   "homepage": "https://github.com/Bichinger/nodejs_socket_policy_server",
   "bugs": "https://github.com/Bichinger/nodejs_socket_policy_server/issues",
-  "license": "Unlicense",
+  "license": "MIT",
 
   "preferGlobal": true,
   "user": "root",

@@ -39,7 +39,6 @@ startStopDaemon({outFile: config.logfile, errFile: config.logfile}, function() {
           } else {
               socket.end();
               message += 'BAD';
-              throw new Error('BAAAAAD');
           }
           socket.destroy();
           logForConnection(socket, message);

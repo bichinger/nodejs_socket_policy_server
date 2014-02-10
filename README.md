@@ -3,6 +3,7 @@ nodejs_socket_policy_server
 
 Unity3D &amp; Flash Socket Policy server for node.js
 
+sudo npm -g install .
 
 sudo npm config --global set socket-policy-server:host 127.0.0.1
 
