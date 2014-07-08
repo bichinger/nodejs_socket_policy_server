@@ -10,6 +10,11 @@
   "homepage": "https://github.com/bichinger/nodejs_socket_policy_server",
   "bugs": "https://github.com/bichinger/nodejs_socket_policy_server/issues",
   "license": "MIT",
+  "author": {
+    "name": "Niklas Bichinger",
+    "email": "niklas@bichinger.de",
+    "url": "http://www.bichinger.de"
+  },
 
   "preferGlobal": true,
   "user": "root",
