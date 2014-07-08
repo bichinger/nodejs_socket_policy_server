@@ -1,10 +1,7 @@
 # nodejs_socket_policy_server
 
-A simple and fast Unity3D/Flash Socket Policy server for node.js. For further
-information on socket policy files have a look at (Flash/Flex/Air):
-http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7c60.html
-or (Unity 3d):
-http://docs.unity3d.com/Manual/SecuritySandbox.html
+A simple and fast Unity3D/Flash Socket Policy server for node.js. For more
+information about socket policy files have a look at [Loading Data in Flash/Flex/Air](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7c60.html) or [Unity 3D Security Sandbox](http://docs.unity3d.com/Manual/SecuritySandbox.html).
 
 ## Installation
 
