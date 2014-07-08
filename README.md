@@ -1,7 +1,7 @@
 nodejs_socket_policy_server
 ===========================
 
-Unity3D &amp; Flash Socket Policy server for node.js
+Unity3D/Flash Socket Policy server for node.js
 
 sudo npm -g install .
 
@@ -13,9 +13,11 @@ sudo npm config --global set socket-policy-server:port 843
 
 sudo npm config --global set socket-policy-server:timeout 5000
 
-sudo npm config --global set socket-policy-server:log_request_data true
+sudo npm config --global set socket-policy-server:log_request_data false
 
-sudo npm config --global set socket-policy-server:log_request_data /var/log/socket-policy-server.log
+sudo npm config --global set socket-policy-server:logfile /var/log/socket-policy-server.log
+
+sudo npm config --global set socket-policy-server:error_logfile /var/log/socket-policy-server-error.log
 
 
 sudo npm -g start socket-policy-server

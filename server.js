@@ -4,8 +4,8 @@ var path = require('path');
 var config = require('./config');
 var startStopDaemon = require('start-stop-daemon');
 
-startStopDaemon({outFile: config.logfile, errFile: config.logfile}, function() {
-  
+startStopDaemon({outFile: config.logfile, errFile: config.error_logfile}, function() {
+
   var policy = fs.readFileSync(path.join(__dirname, 'socket_policy.xml'));
 
   var command = '<policy-file-request/>';

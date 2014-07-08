@@ -20,4 +20,7 @@ config.log_request_data = process.env.npm_package_config_log_request_data;
 // Path to the logfile
 config.logfile = process.env.npm_package_config_logfile;
 
+// Path to the error logfile
+config.error_logfile = process.env.npm_package_config_error_logfile;
+
 module.exports = config;
