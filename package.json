@@ -15,7 +15,7 @@
   "user": "root",
 
   "dependencies": {
-    "start-stop-daemon": ">=0.1.0"
+    "start-stop-daemon": "^0.1.0"
   },
 
   "config": {
