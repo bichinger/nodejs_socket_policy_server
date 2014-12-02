@@ -5,7 +5,7 @@ information about socket policy files have a look at [Loading Data in Flash/Flex
 
 ## Installation
 
-    $ npm install -g nodejs_socket_policy_server
+    $ npm install -g socket-policy-server
 
 ## Configuration
 
