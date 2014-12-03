@@ -1,8 +1,8 @@
 {
   "name": "socket-policy-server",
-  "description": "Unity3D/Flash Socket Policy server",
-  "keywords": ["flash", "unity3d", "unity", "webplayer", "socket", "policy", "server", "crossdomain"],
-  "version": "1.0.1",
+  "description": "Socket policy server for Unity3D & Adobe Flash",
+  "keywords": ["flash", "unity3d", "unity", "webplayer", "socket", "policy", "server", "crossdomain", "crossdomain.xml"],
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git@github.com:bichinger/nodejs_socket_policy_server.git"
@@ -13,7 +13,7 @@
   "author": {
     "name": "Niklas Bichinger",
     "email": "niklas@bichinger.de",
-    "url": "http://www.bichinger.de"
+    "url": "https://www.bichinger.de"
   },
 
   "preferGlobal": true,
