@@ -3,8 +3,8 @@ var config = {};
 // Note: all parameters must be set!
 
 // host/ip the server will exclusively bind to
-// set null to make server listen on all ip addresses
-config.host = process.env.npm_package_config_host;
+// set null to make server listen on all ip addresses (binds to ip 0.0.0.0)
+config.host = process.env.npm_package_config_host || "0.0.0.0";
 
 // TCP port the server will bind to
 config.port = process.env.npm_package_config_port;
