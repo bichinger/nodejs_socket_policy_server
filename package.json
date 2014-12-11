@@ -2,7 +2,7 @@
   "name": "socket-policy-server",
   "description": "Socket policy server for Unity3D & Adobe Flash",
   "keywords": ["flash", "unity3d", "unity", "webplayer", "socket", "policy", "server", "crossdomain", "crossdomain.xml"],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git@github.com:bichinger/nodejs_socket_policy_server.git"
