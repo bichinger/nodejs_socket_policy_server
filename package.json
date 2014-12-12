@@ -24,7 +24,7 @@
   },
 
   "config": {
-    "host": "0.0.0.0",
+    "host": "",
     "port": 843,
     "timeout": 5000,
     "log_request_data": false,
