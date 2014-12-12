@@ -5,8 +5,8 @@ var config = require('./config');
 var startStopDaemon = require('start-stop-daemon');
 
 startStopDaemon({outFile: config.logfile, errFile: config.error_logfile}, function() {
-
-  var policy = fs.readFileSync(path.join(__dirname, 'socket_policy.xml'));
+  var policypath = path.resolve(__dirname, config.policyfile || 'socket_policy.xml');
+  var policy = fs.readFileSync(policypath);
 
   var command = '<policy-file-request/>';
   var commandLength = command.length;
@@ -64,7 +64,8 @@ startStopDaemon({outFile: config.logfile, errFile: config.error_logfile}, functi
       log("socket policy server closing after handling " + connectionCount + " connections");
   });
 
-  log('socket policy server binding to port ' + config.port + ' on ' + (config.host || 'all IPs') + "...");
+  log('socket policy server binding to port ' + config.port + ' on ' + config.host + "...");
+    log('\twith policy file: ' + policypath);
   server.listen(config.port, config.host, function () {
     log("successfully bound!");
   });
