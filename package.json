@@ -24,12 +24,13 @@
   },
 
   "config": {
-    "host": null,
+    "host": "",
     "port": 843,
     "timeout": 5000,
     "log_request_data": false,
     "logfile": "/var/log/socket-policy-server.log",
-    "error_logfile": "/var/log/socket-policy-server-error.log"
+    "error_logfile": "/var/log/socket-policy-server-error.log",
+    "policyfile": "socket_policy.xml"
   },
 
   "scripts": {

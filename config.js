@@ -4,7 +4,7 @@ var config = {};
 
 // host/ip the server will exclusively bind to
 // set null to make server listen on all ip addresses (binds to ip 0.0.0.0)
-config.host = process.env.npm_package_config_host || "0.0.0.0";
+config.host = process.env.npm_package_config_host || '0.0.0.0';
 
 // TCP port the server will bind to
 config.port = process.env.npm_package_config_port;
@@ -22,5 +22,8 @@ config.logfile = process.env.npm_package_config_logfile;
 
 // Path to the error logfile
 config.error_logfile = process.env.npm_package_config_error_logfile;
+
+// Path to the policy XML file
+config.policyfile = process.env.npm_package_config_policyfile;
 
 module.exports = config;

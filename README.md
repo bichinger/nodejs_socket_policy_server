@@ -13,7 +13,7 @@ information about socket policy files have a look at [Loading Data in Flash/Flex
 
 Sets the IP to listen to for serving the socket policy file. Pass a single IP
 address to listen only on that IP or leave blank to listen on all IPs. Default
-is blank (listen on all IPs).
+is blank (listen on all IPs, which is equivalent to IP 0.0.0.0).
 
     $ npm config --global set socket-policy-server:port 843
 
@@ -39,6 +39,13 @@ Note that this file will be overwritten, not appended to!
 
 Sets the error log file. Defaults to /var/log/socket-policy-server-error.log.
 Note that this file will be overwritten, not appended to!
+
+    $ npm config --global set socket-policy-server:policyfile socket_policy.xml
+
+Sets the socket policy file that will be sent out. Defaults to socket_policy.xml
+(relative path). The [embedded socket policy file](https://github.com/bichinger/nodejs_socket_policy_server/blob/master/socket_policy.xml) only grants access to
+ports 80 and 443. If you need to change that, create your own file and set its
+path with this configuration option.
 
 ## Usage
 
