@@ -2,7 +2,7 @@
   "name": "socket-policy-server",
   "description": "Socket policy server for Unity3D & Adobe Flash",
   "keywords": ["flash", "unity3d", "unity", "webplayer", "socket", "policy", "server", "crossdomain", "crossdomain.xml"],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:bichinger/nodejs_socket_policy_server.git"
@@ -27,6 +27,7 @@
     "host": "",
     "port": 843,
     "timeout": 5000,
+    "logging": true,
     "log_request_data": false,
     "logfile": "/var/log/socket-policy-server.log",
     "error_logfile": "/var/log/socket-policy-server-error.log",

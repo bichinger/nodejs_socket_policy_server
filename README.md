@@ -25,6 +25,10 @@ Sets the wait time in milliseconds after an incoming connection. The client has
 this much time to send its request string or it will be disconnected. Defaults
 to 5000.
 
+    $ npm config --global set logging true/false
+
+Globally turns logging on/off (affects log_request_data and logfile options).
+
     $ npm config --global set socket-policy-server:log_request_data false
 
 Indicates if the server should log incoming request strings. Use only for

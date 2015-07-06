@@ -13,6 +13,9 @@ config.port = process.env.npm_package_config_port;
 // request string. 0 means infinite (not recommended).
 config.timeout = process.env.npm_package_config_timeout;
 
+// globally turns logging on/off (affects log_request_data and logfile options)
+config.logging = process.env.npm_package_config_logging;
+
 // whether or not to log the actual data the clients send to the server.
 // set to true only for debugging purposes!
 config.log_request_data = process.env.npm_package_config_log_request_data;

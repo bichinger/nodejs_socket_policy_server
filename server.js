@@ -4,7 +4,7 @@ var path = require('path');
 var config = require('./config');
 var startStopDaemon = require('start-stop-daemon');
 
-startStopDaemon({outFile: config.logfile, errFile: config.error_logfile}, function() {
+startStopDaemon({logFile: config.logfile, errFile: config.error_logfile}, function() {
   var policypath = path.resolve(__dirname, config.policyfile);
   var policy = fs.readFileSync(policypath);
 
@@ -74,6 +74,9 @@ startStopDaemon({outFile: config.logfile, errFile: config.error_logfile}, functi
   }
 
   function log(message) {
+      if (!config.logging) {
+        return;
+      }
       var t = (new Date()).toISOString();
       console.log(t + ' - ' + message);
   }
